@@ -222,7 +222,7 @@ kafka-server-start /etc/kafka/server.properties
 	<blockquote> wget "http://localhost:3000" </blockquote>
 	<p>Or just click <code>Preview button</code> in the online environment</p>
 	<p><strong>Spark Console UI</strong></p>
-	<p><img src="https://github.com/Binisicaru/sf-crime-statistics/blob/main/screenshoots/Screenshot%20-Progress-Reporter.png" alt="file" width="800" height="300" />&nbsp;</p>
+	<p><img src="https://github.com/Binisicaru/sf-crime-statistics/blob/main/screenshoots/Screenshot-Spark-console-ui.png" alt="file" width="800" height="300" />&nbsp;</p>
 </ul>
 
 <h2>Step 3</h2>
