@@ -192,7 +192,7 @@ kafka-server-start /etc/kafka/server.properties
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p><strong>Kafka Consumer Console Output (Screenshot)</strong></p>
-	<p><img src="https://github.com/fogofortitude/SF-Crime-Statistics-with-Spark/blob/master/STEP-1-Output/step1-kafka-console-producer-results.PNG" alt="file" width="800" height="300" />&nbsp;</p>
+	<p><img src="https://github.com/Binisicaru/sf-crime-statistics/blob/main/screenshoots/Screenshot-Console_Consumer.png" alt="file" width="800" height="300" />&nbsp;</p>
 <code></code></article>
 </div>
 </div>
