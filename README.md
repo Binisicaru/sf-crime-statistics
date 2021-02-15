@@ -258,14 +258,186 @@ kafka-server-start /etc/kafka/server.properties
 </table>
 </li>
 </ol>
-<p style="padding-left: 30px;">From looking at Sparks Web UI - Executors Tab it was evident from looking at the following columns:&nbsp;</p>
 
-
-<p><img src="https://github.com/fogofortitude/SF-Crime-Statistics-with-Spark/blob/master/STEP-2-Output/Config_v1/less_optimal.png" alt="file" width="800" height="400" />&nbsp;</p>
-
-
-
-<p><img src="https://github.com/fogofortitude/SF-Crime-Statistics-with-Spark/blob/master/STEP-2-Output/config_v2/more_optimal.png" alt="file" width="800" height="400" />&nbsp;</p>
-
-<p style="padding-left: 30px;">&nbsp;</p>
-<p style="padding-left: 30px;">&nbsp;</p>
+<table cellspacing="0" border="0">
+	<colgroup width="195"></colgroup>
+	<colgroup width="209"></colgroup>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=2 height="17" align="center" valign=middle bgcolor="#DDDDDD"><b><font face="Arial" color="#000000">MaxRatePerPartition = 20 &amp; maxOffsetPerTrigger = 20</font></b></td>
+		</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="17" align="left" valign=bottom bgcolor="#CCFFCC"><font face="Arial" color="#000000">Task Time</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom bgcolor="#CCFFCC"><font face="Arial" color="#000000">2.0 minutes</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="17" align="left" valign=bottom bgcolor="#CCFFCC"><font face="Arial" color="#000000">shufle read</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom bgcolor="#CCFFCC"><font face="Arial" color="#000000">79 KB</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="17" align="left" valign=bottom bgcolor="#CCFFCC"><font face="Arial" color="#000000">shuffled write</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom bgcolor="#CCFFCC"><font face="Arial" color="#000000">79.2 KB</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="17" align="left" valign=bottom bgcolor="#CCFFCC"><font face="Arial" color="#000000">Complete Tasks</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="right" valign=bottom bgcolor="#CCFFCC" sdval="1529" sdnum="2058;"><font face="Arial" color="#000000">1529</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="17" align="left" valign=bottom bgcolor="#CCFFCC"><font face="Arial" color="#000000">Storage/Memory</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom bgcolor="#CCFFCC"><font face="Arial" color="#000000">647.4 KB/384.1 KB</font></td>
+	</tr>
+	<tr>
+		<td height="17" align="left"><br></td>
+		<td align="left"><br></td>
+	</tr>
+	<tr>
+		<td height="17" align="left"><br></td>
+		<td align="left"><br></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=2 height="17" align="center" valign=middle bgcolor="#DDDDDD"><b><font face="Arial" color="#000000">MaxRatePerPartition = 100 &amp; maxOffsetPerTrigger = 100</font></b></td>
+		</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="17" align="left" valign=bottom bgcolor="#CCFFCC"><font face="Arial" color="#000000">Task Time</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom bgcolor="#CCFFCC"><font face="Arial" color="#000000">2.0 minutes</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="17" align="left" valign=bottom bgcolor="#CCFFCC"><font face="Arial" color="#000000">shufle read</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom bgcolor="#CCFFCC"><font face="Arial" color="#000000">120.8 KB</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="17" align="left" valign=bottom bgcolor="#CCFFCC"><font face="Arial" color="#000000">shuffled write</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom bgcolor="#CCFFCC"><font face="Arial" color="#000000">121.3 KB</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="17" align="left" valign=bottom bgcolor="#CCFFCC"><font face="Arial" color="#000000">Complete Tasks</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="right" valign=bottom bgcolor="#CCFFCC" sdval="1490" sdnum="2058;"><font face="Arial" color="#000000">1490</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="17" align="left" valign=bottom bgcolor="#CCFFCC"><font face="Arial" color="#000000">Storage/Memory</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom bgcolor="#CCFFCC"><font face="Arial" color="#000000">647.5 KB/384.1 KB</font></td>
+	</tr>
+	<tr>
+		<td height="17" align="left"><br></td>
+		<td align="left"><br></td>
+	</tr>
+	<tr>
+		<td height="17" align="left"><br></td>
+		<td align="left"><br></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=2 height="17" align="center" valign=middle bgcolor="#DDDDDD"><b><font face="Arial" color="#000000">MaxRatePerPartition = 100 &amp; maxOffsetPerTrigger = 200</font></b></td>
+		</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="17" align="left" valign=bottom bgcolor="#CCFFCC"><font face="Arial" color="#000000">Task Time</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom bgcolor="#CCFFCC"><font face="Arial" color="#000000">2.0 minutes</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="17" align="left" valign=bottom bgcolor="#CCFFCC"><font face="Arial" color="#000000">shufle read</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom bgcolor="#CCFFCC"><font face="Arial" color="#000000">6.6 KB</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="17" align="left" valign=bottom bgcolor="#CCFFCC"><font face="Arial" color="#000000">shuffled write</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom bgcolor="#CCFFCC"><font face="Arial" color="#000000">6.9 KB</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="17" align="left" valign=bottom bgcolor="#CCFFCC"><font face="Arial" color="#000000">Complete Tasks</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="right" valign=bottom bgcolor="#CCFFCC" sdval="1696" sdnum="2058;"><font face="Arial" color="#000000">1696</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="17" align="left" valign=bottom bgcolor="#CCFFCC"><font face="Arial" color="#000000">Storage/Memory</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom bgcolor="#CCFFCC"><font face="Arial" color="#000000">728.1 KB/384.1 KB</font></td>
+	</tr>
+	<tr>
+		<td height="17" align="left"><br></td>
+		<td align="left"><br></td>
+	</tr>
+	<tr>
+		<td height="17" align="left"><br></td>
+		<td align="left"><br></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=2 height="17" align="center" valign=middle bgcolor="#DDDDDD"><b><font face="Arial" color="#000000">MaxRatePerPartition = 200 &amp; maxOffsetPerTrigger = 100</font></b></td>
+		</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="17" align="left" valign=bottom bgcolor="#CCFFCC"><font face="Arial" color="#000000">Task Time</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom bgcolor="#CCFFCC"><font face="Arial" color="#000000">2.0 minutes</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="17" align="left" valign=bottom bgcolor="#CCFFCC"><font face="Arial" color="#000000">shufle read</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom bgcolor="#CCFFCC"><font face="Arial" color="#000000">14.3 KB</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="17" align="left" valign=bottom bgcolor="#CCFFCC"><font face="Arial" color="#000000">shuffled write</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom bgcolor="#CCFFCC"><font face="Arial" color="#000000">14.5 KB</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="17" align="left" valign=bottom bgcolor="#CCFFCC"><font face="Arial" color="#000000">Complete Tasks</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="right" valign=bottom bgcolor="#CCFFCC" sdval="1689" sdnum="2058;"><font face="Arial" color="#000000">1689</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="17" align="left" valign=bottom bgcolor="#CCFFCC"><font face="Arial" color="#000000">Storage/Memory</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom bgcolor="#CCFFCC"><font face="Arial" color="#000000">728.1 KB/384.1 KB</font></td>
+	</tr>
+	<tr>
+		<td height="17" align="left"><br></td>
+		<td align="left"><br></td>
+	</tr>
+	<tr>
+		<td height="17" align="left"><br></td>
+		<td align="left"><br></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=2 height="17" align="center" valign=middle bgcolor="#DDDDDD"><b><font face="Arial" color="#000000">MaxRatePerPartition = 200 &amp; maxOffsetPerTrigger = 200</font></b></td>
+		</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="17" align="left" valign=bottom bgcolor="#CCFFCC"><font face="Arial" color="#000000">Task Time</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom bgcolor="#CCFFCC"><font face="Arial" color="#000000">2.0 minutes</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="17" align="left" valign=bottom bgcolor="#CCFFCC"><font face="Arial" color="#000000">shufle read</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom bgcolor="#CCFFCC"><font face="Arial" color="#000000">19.9 KB</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="17" align="left" valign=bottom bgcolor="#CCFFCC"><font face="Arial" color="#000000">shuffled write</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom bgcolor="#CCFFCC"><font face="Arial" color="#000000">20.0 KB</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="17" align="left" valign=bottom bgcolor="#CCFFCC"><font face="Arial" color="#000000">Complete Tasks</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="right" valign=bottom bgcolor="#CCFFCC" sdval="1743" sdnum="2058;"><font face="Arial" color="#000000">1743</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="17" align="left" valign=bottom bgcolor="#CCFFCC"><font face="Arial" color="#000000">Storage/Memory</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom bgcolor="#CCFFCC"><font face="Arial" color="#000000">728.4 KB/384.1 KB</font></td>
+	</tr>
+	<tr>
+		<td height="17" align="left"><br></td>
+		<td align="left"><br></td>
+	</tr>
+	<tr>
+		<td height="17" align="left"><br></td>
+		<td align="left"><br></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=2 height="17" align="center" valign=middle bgcolor="#DDDDDD"><b><font face="Arial" color="#000000">MaxRatePerPartition = 400 &amp; maxOffsetPerTrigger = 400</font></b></td>
+		</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="17" align="left" valign=bottom bgcolor="#CCFFCC"><font face="Arial" color="#000000">Task Time</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom bgcolor="#CCFFCC"><font face="Arial" color="#000000">2.0 minutes</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="17" align="left" valign=bottom bgcolor="#CCFFCC"><font face="Arial" color="#000000">shufle read</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom bgcolor="#CCFFCC"><font face="Arial" color="#000000">25.2 KB</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="17" align="left" valign=bottom bgcolor="#CCFFCC"><font face="Arial" color="#000000">shuffled write</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom bgcolor="#CCFFCC"><font face="Arial" color="#000000">25.2 KB</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="17" align="left" valign=bottom bgcolor="#CCFFCC"><font face="Arial" color="#000000">Complete Tasks</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="right" valign=bottom bgcolor="#CCFFCC" sdval="1588" sdnum="2058;"><font face="Arial" color="#000000">1588</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="17" align="left" valign=bottom bgcolor="#CCFFCC"><font face="Arial" color="#000000">Storage/Memory</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom bgcolor="#CCFFCC"><font face="Arial" color="#000000">647.4 KB/384.1 KB</font></td>
+	</tr>
+</table>
