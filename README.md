@@ -215,9 +215,12 @@ kafka-server-start /etc/kafka/server.properties
 	<li>Implement all the TODO items in&nbsp;<code>data_stream.py</code>. You may need to explore the dataset beforehand using a Jupyter Notebook.</li>
 	<li>Do a spark-submit using this command:&nbsp;<code>spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.11:2.3.4 --master local[*] data_stream.py</code>.</li>
 	<li>Take a screenshot of your progress reporter after executing a Spark job.&nbsp;<strong>You will need to include this screenshot as part of your project submission.</strong></li>
+	<p><strong>Progress Reporter Output (Screenshot)</strong></p>
+	<p><img src="https://github.com/Binisicaru/sf-crime-statistics/blob/main/screenshoots/Screenshot-Console_Consumer.png" alt="file" width="800" height="300" />&nbsp;</p>
 	<li>Take a screenshot of the Spark Streaming UI as the streaming continues.&nbsp;<strong>You will need to include this screenshot as part of your project submission.</strong></li>
 	Run the following to view Spark UI
 	<blockquote> wget "http://localhost:3000" </blockquote>
+	<p>Or just click <code>Preview button</code> in the online environment</p>
 </ul>
 
 <h2>Step 3</h2>
