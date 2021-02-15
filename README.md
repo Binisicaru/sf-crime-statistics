@@ -232,6 +232,7 @@ kafka-server-start /etc/kafka/server.properties
 </li>
 <li>
 <p><strong>What were the 2-3 most efficient SparkSession property key/value pairs?&nbsp;</strong><strong>Through testing multiple variations on values, how can you tell these were the most optimal?</strong></p>
+<p>I did some camparisons and I think the best values were obtained assigning the next values</p>
 <table style="width: 275.333px;">
 <tbody>
 <tr>
@@ -241,12 +242,12 @@ kafka-server-start /etc/kafka/server.properties
 </tr>
 <tr>
 <td style="width: 151px;">maxRatePerPartition</td>
-<td style="width: 27px;">10</td>
+<td style="width: 27px;">100</td>
 <td style="width: 85.3333px;">&nbsp;</td>
 </tr>
 <tr>
 <td style="width: 151px;">maxOffsetsPerTrigger</td>
-<td style="width: 27px;">100</td>
+<td style="width: 27px;">200</td>
 <td style="width: 85.3333px;">&nbsp;</td>
 </tr>
 <tr>
