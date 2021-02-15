@@ -166,38 +166,32 @@ kafka-server-start /etc/kafka/server.properties
 </blockquote>
 <h4><a id="user-content-workspace-environment-1" class="anchor" href="https://github.com/fogofortitude/SF-Crime-Statistics-with-Spark#workspace-environment-1" aria-hidden="true"></a><strong>Workspace Environment</strong></h4>
 <ul>
-<li>setup the Udacity Workspace
-<blockquote>./start.sh</blockquote>
+<li>Start Zookeeper server
+<blockquote>$<b>zookeeper-server-start</b> config/zookeeper.properties</blockquote>
 </li>
-<li>started the zookeeper server
-<blockquote>/usr/bin/zookeeper-server-start /etc/kafka/zookeeper.properties</blockquote>
+<li>Start Kafka server<br />
+<blockquote>$<b>kafka-server-start</b> /config/server.properties</blockquote>
 </li>
-<li>start the kafka server<br />
-<blockquote>kafka-server-start /etc/kafka/server.properties</blockquote>
+<li>Create the topic sf_crime<br />
+<blockquote><code>$<b>kafka-topics</b> --zookeeper localhost:2181 --create --topic sf_crime --replication-factor 1 --partitions 1</code></blockquote>
 </li>
-<li>Create Topic <br />
-<blockquote><code>kafka-topics --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic com.sf.police.event.calls</code></blockquote>
+<li>Verify if the topic sf_crime exists<br />
+<blockquote>$<b>kafka-topics</b> --zookeeper localhost:2181 --list</blockquote>
 </li>
-<li>Checked the topic "com.sf.police.event.calls" now exists<br />
-<blockquote>/usr/bin/kafka-topics --list --zookeeper localhost:2181</blockquote>
+<li>Start the Kafka producer server<br />
+	<code>$python kafka_server.py</code>
+	<blockquote>
+	   <p><em>
+	   </em></p>
+	</blockquote>
 </li>
-<li>Run kafka-console-producer with Dummy JSON values<br />
-<blockquote>kafka-console-producer --broker-list localhost:9092 --topic com.sf.police.event.calls</blockquote>
-<blockquote>
-<p><em>{ "crime_id": "183653763", "original_crime_type_name": "Traffic Stop", "report_date": "2018-12-31T00:00:00.000","call_date": "2018-12-31T00:00:00.000","offense_date": "2018-12-31T00:00:00.000","call_time": "23:57","call_date_time": "2018-12-31T23:57:00.000","disposition": "ADM","address": "Geary Bl/divisadero St","city": "San Francisco","state": "CA","agency_id": "1","address_type": "Intersection","common_location": "" }</em></p>
-<p><em>{"crime_id":"183653745","original_crime_type_name":"Audible Alarm","report_date":"2018-12-31T00:00:00.000","call_date":"2018-12-31T00:00:00.000","offense_date":"2018-12-31T00:00:00.000","call_time":"23:47","call_date_time":"2018-12-31T23:47:00.000","disposition":"PAS","address":"1900 Block Of 18th Av","city":"San Francisco","state":"CA","agency_id":"1","address_type":"Premise Address","common_location":""}</em></p>
- <p><em>{"crime_id":"183653706","original_crime_type_name":"Passing Call","report_date":"2018-12-31T00:00:00.000","call_date":"2018-12-31T00:00:00.000","offense_date":"2018-12-31T00:00:00.000","call_time":"23:34","call_date_time":"2018-12-31T23:34:00.000","disposition":"Not recorded","address":"1500 Block Of Haight St","city":"San Francisco","state":"CA","agency_id":"1","address_type":"Common Location","common_location":"Haight St Corridor, Sf"}
-   </em></p>
-  </blockquote>
-<li><span style="background-color: #ccffcc;"><span style="color: #008000;"><strong>TIP:</strong> use this to tool to convert multiline JSON layout to single line</span> https://tools.knowledgewalls.com/online-multiline-to-single-line-converter</span></li>
 <li>Run kafka-console-consumer
-<blockquote><code>kafka-console-consumer --bootstrap-server localhost:9092 --topic com.sf.police.event.calls --from-beginning</code></blockquote>
+<blockquote><code>kafka-console-consumer --bootstrap-server localhost:9092 --topic sf_crime --from-beginning</code></blockquote>
 </li>
 </ul>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
-
-<p><strong>Sample Kafka Consumer Console Output (Screenshot)</strong></p>
+<p><strong>Kafka Consumer Console Output (Screenshot)</strong></p>
 	<p><img src="https://github.com/fogofortitude/SF-Crime-Statistics-with-Spark/blob/master/STEP-1-Output/step1-kafka-console-producer-results.PNG" alt="file" width="800" height="300" />&nbsp;</p>
 <code></code></article>
 </div>
@@ -265,77 +259,11 @@ kafka-server-start /etc/kafka/server.properties
 </li>
 </ol>
 <p style="padding-left: 30px;">From looking at Sparks Web UI - Executors Tab it was evident from looking at the following columns:&nbsp;</p>
-<table style="width: 205px; margin-left: 30px;">
-<tbody style="padding-left: 30px;">
-<tr style="padding-left: 30px;">
-<td style="width: 153px; padding-left: 30px;"><strong>Column</strong></td>
-</tr>
-<tr style="padding-left: 30px;">
-<td style="width: 153px; padding-left: 30px;">Task Time</td>
-</tr>
-<tr style="padding-left: 30px;">
-<td style="width: 153px; padding-left: 30px;">Shuffle Read</td>
-</tr>
-<tr style="padding-left: 30px;">
-<td style="width: 153px; padding-left: 30px;">Shuffle Write</td>
-</tr>
-</tbody>
-</table>
-<p style="padding-left: 30px;">The screenshots show the differences in performance between two separate Spark Session configurations</p>
-<p style="padding-left: 30px;">&nbsp;<strong>Screenshot 2 - Spark Session Properties</strong></p>
-<table style="margin-left: 30px;">
-<tbody>
-<tr>
-<td><strong>Property</strong></td>
-<td><strong>Value</strong></td>
-<td>&nbsp;</td>
-</tr>
-<tr>
-<td>maxRatePerPartition</td>
-<td>100</td>
-<td>&nbsp;</td>
-</tr>
-<tr>
-<td>maxOffsetsPerTrigger</td>
-<td>200</td>
-<td>&nbsp;</td>
-</tr>
-<tr>
-<td>master</td>
-<td>local[*]</td>
-<td style="padding-left: 30px;">&nbsp;</td>
-</tr>
-</tbody>
-</table>
-<p>&nbsp;</p>
+
 
 <p><img src="https://github.com/fogofortitude/SF-Crime-Statistics-with-Spark/blob/master/STEP-2-Output/Config_v1/less_optimal.png" alt="file" width="800" height="400" />&nbsp;</p>
 
-<p style="padding-left: 30px;">&nbsp;<strong>Screenshot 2 - Spark Session Properties</strong></p>
-<table style="margin-left: 30px;">
-<tbody>
-<tr>
-<td><strong>Property</strong></td>
-<td><strong>Value</strong></td>
-<td>&nbsp;</td>
-</tr>
-<tr>
-<td>maxRatePerPartition</td>
-<td>10</td>
-<td>&nbsp;</td>
-</tr>
-<tr>
-<td>maxOffsetsPerTrigger</td>
-<td>100</td>
-<td>&nbsp;</td>
-</tr>
-<tr>
-<td>master</td>
-<td>local[1]</td>
-<td>&nbsp;</td>
-</tr>
-</tbody>
-</table>
+
 
 <p><img src="https://github.com/fogofortitude/SF-Crime-Statistics-with-Spark/blob/master/STEP-2-Output/config_v2/more_optimal.png" alt="file" width="800" height="400" />&nbsp;</p>
 
