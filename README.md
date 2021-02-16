@@ -230,9 +230,9 @@ kafka-server-start /etc/kafka/server.properties
 <li>
 <p><strong> did changing values on the SparkSession property parameters affect the throughput and latency of the data?</strong></p>
 <ul>
-<li>Yes, altering them impacted Time it Tooks to Complete Jobs / Tasks</li>
-<li>Altering the number of cores used ie master("local[*]") had the most significant impact. It seemed that by reducing the number of cores reduced the processing of the 200 Tasks I had it process. This I believe may have been the result of reduced Shuffle Read and Shuffle Write.&nbsp;</li>
-<li>Altering maxRatePerPartition and&nbsp;maxOffsetsPerTrigger also seemed to affect throughput and latency.&nbsp;</li>
+<li>Yes, changing to different values impacted the time it tooks to process and complete jobs / tasks</li>
+<li>If core's numbers are assigned to  master("local[*]") we can see it has had the most visible impact. I took a comparative between different measures with 1 core and with the cores the host allow me (*) and it seems if I assign 1 core, more tasks has been completed in the same time as I would increment the number of cores, even when the real processing time is more delayed. When 1 core is assigned Shuffle reads and writes decrease.&nbsp;</li>
+<li>Another configs I tuned were maxRatePerPartition and maxOffsetsPerTrigger, this options affect the behaviour in terms of throughput and latency.</li>
 </ul>
 </li>
 <li>
