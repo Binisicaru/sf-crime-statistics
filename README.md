@@ -277,20 +277,20 @@ kafka-server-start /etc/kafka/server.properties
 <tbody>
     <tr class="ro2">
         <td colspan="2" style="text-align:left;width:5.445cm; " class="ce1">
-            <p>With available number of cores assigned (local[*])</p>
+            <h3>With available number of cores assigned (local[*])</h3>
         </td>
         <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
         <td colspan="2" style="text-align:left;width:5.419cm; " class="ce1">
-            <p>With 1 core assigned (local[1])</p>
+            <h3>With 1 core assigned (local[1])</h3>
         </td>
     </tr>
     <tr class="ro1">
         <td colspan="2" style="text-align:left;width:5.445cm; " class="ce2">
-            <p>MaxRatePerPartition = 20 &amp; maxOffsetPerTrigger = 20</p>
+            <p><b>MaxRatePerPartition = 20 &amp; maxOffsetPerTrigger = 20</b></p>
         </td>
         <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
         <td colspan="2" style="text-align:left;width:5.419cm; " class="ce2">
-            <p>MaxRatePerPartition = 20 &amp; maxOffsetPerTrigger = 20</p>
+            <p><b>MaxRatePerPartition = 20 &amp; maxOffsetPerTrigger = 20</b></p>
         </td>
     </tr>
     <tr class="ro1">
@@ -384,11 +384,11 @@ kafka-server-start /etc/kafka/server.properties
     </tr>
     <tr class="ro1">
         <td colspan="2" style="text-align:left;width:5.445cm; " class="ce2">
-            <p>MaxRatePerPartition = 100 &amp; maxOffsetPerTrigger = 100</p>
+            <p><b>MaxRatePerPartition = 100 &amp; maxOffsetPerTrigger = 100</b></p>
         </td>
         <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
         <td colspan="2" style="text-align:left;width:5.419cm; " class="ce2">
-            <p>MaxRatePerPartition = 100 &amp; maxOffsetPerTrigger = 100</p>
+            <p><b>MaxRatePerPartition = 100 &amp; maxOffsetPerTrigger = 100</b></p>
         </td>
     </tr>
     <tr class="ro1">
@@ -482,11 +482,11 @@ kafka-server-start /etc/kafka/server.properties
     </tr>
     <tr class="ro1">
         <td colspan="2" style="text-align:left;width:5.445cm; " class="ce2">
-            <p>MaxRatePerPartition = 100 &amp; maxOffsetPerTrigger = 200</p>
+            <p><b>MaxRatePerPartition = 100 &amp; maxOffsetPerTrigger = 200</b></p>
         </td>
         <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
         <td colspan="2" style="text-align:left;width:5.419cm; " class="ce2">
-            <p>MaxRatePerPartition = 100 &amp; maxOffsetPerTrigger = 200</p>
+            <p><b>MaxRatePerPartition = 100 &amp; maxOffsetPerTrigger = 200</b></p>
         </td>
     </tr>
     <tr class="ro1">
@@ -580,11 +580,11 @@ kafka-server-start /etc/kafka/server.properties
     </tr>
     <tr class="ro1">
         <td colspan="2" style="text-align:left;width:5.445cm; " class="ce2">
-            <p>MaxRatePerPartition = 200 &amp; maxOffsetPerTrigger = 100</p>
+            <p><b>MaxRatePerPartition = 200 &amp; maxOffsetPerTrigger = 100</b></p>
         </td>
         <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
         <td colspan="2" style="text-align:left;width:5.419cm; " class="ce2">
-            <p>MaxRatePerPartition = 200 &amp; maxOffsetPerTrigger = 100</p>
+            <p><b>MaxRatePerPartition = 200 &amp; maxOffsetPerTrigger = 100</b></p>
         </td>
     </tr>
     <tr class="ro1">
@@ -678,11 +678,11 @@ kafka-server-start /etc/kafka/server.properties
     </tr>
     <tr class="ro1">
         <td colspan="2" style="text-align:left;width:5.445cm; " class="ce2">
-            <p>MaxRatePerPartition = 200 &amp; maxOffsetPerTrigger = 200</p>
+            <p><b>MaxRatePerPartition = 200 &amp; maxOffsetPerTrigger = 200</b></p>
         </td>
         <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
         <td colspan="2" style="text-align:left;width:5.419cm; " class="ce2">
-            <p>MaxRatePerPartition = 200 &amp; maxOffsetPerTrigger = 200</p>
+            <p><b>MaxRatePerPartition = 200 &amp; maxOffsetPerTrigger = 200</b></p>
         </td>
     </tr>
     <tr class="ro1">
@@ -776,11 +776,11 @@ kafka-server-start /etc/kafka/server.properties
     </tr>
     <tr class="ro1">
         <td colspan="2" style="text-align:left;width:5.445cm; " class="ce2">
-            <p>MaxRatePerPartition = 400 &amp; maxOffsetPerTrigger = 400</p>
+            <p><b>MaxRatePerPartition = 400 &amp; maxOffsetPerTrigger = 400</b></p>
         </td>
         <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
         <td colspan="2" style="text-align:left;width:5.419cm; " class="ce2">
-            <p>MaxRatePerPartition = 400 &amp; maxOffsetPerTrigger = 400</p>
+            <p><b>MaxRatePerPartition = 400 &amp; maxOffsetPerTrigger = 400</b></p>
         </td>
     </tr>
     <tr class="ro1">
