@@ -275,18 +275,7 @@ kafka-server-start /etc/kafka/server.properties
     <col width="226">
 </colgroup>
 <tbody>
-    <tr class="ro1">
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
-        <td style="text-align:left;width:5.445cm; " class="Default">&nbsp;</td>
-        <td style="text-align:left;width:5.364cm; " class="Default">&nbsp;</td>
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
-        <td style="text-align:left;width:5.419cm; " class="Default">&nbsp;</td>
-        <td style="text-align:left;width:5.173cm; " class="Default">&nbsp;</td>
-    </tr>
     <tr class="ro2">
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
         <td colspan="2" style="text-align:left;width:5.445cm; " class="ce1">
             <p>With available number of cores assigned (local[*])</p>
         </td>
@@ -296,8 +285,6 @@ kafka-server-start /etc/kafka/server.properties
         </td>
     </tr>
     <tr class="ro1">
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
         <td colspan="2" style="text-align:left;width:5.445cm; " class="ce2">
             <p>MaxRatePerPartition = 20 &amp; maxOffsetPerTrigger = 20</p>
         </td>
@@ -307,8 +294,6 @@ kafka-server-start /etc/kafka/server.properties
         </td>
     </tr>
     <tr class="ro1">
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
         <td style="text-align:left;width:5.445cm; " class="ce3">
             <p>Task Time</p>
         </td>
@@ -324,8 +309,6 @@ kafka-server-start /etc/kafka/server.properties
         </td>
     </tr>
     <tr class="ro1">
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
         <td style="text-align:left;width:5.445cm; " class="ce3">
             <p>shufle read</p>
         </td>
@@ -341,8 +324,6 @@ kafka-server-start /etc/kafka/server.properties
         </td>
     </tr>
     <tr class="ro1">
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
         <td style="text-align:left;width:5.445cm; " class="ce3">
             <p>shuffled write</p>
         </td>
@@ -358,8 +339,6 @@ kafka-server-start /etc/kafka/server.properties
         </td>
     </tr>
     <tr class="ro1">
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
         <td style="text-align:left;width:5.445cm; " class="ce3">
             <p>Complete Tasks</p>
         </td>
@@ -375,8 +354,6 @@ kafka-server-start /etc/kafka/server.properties
         </td>
     </tr>
     <tr class="ro1">
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
         <td style="text-align:left;width:5.445cm; " class="ce3">
             <p>Storage/Memory</p>
         </td>
@@ -392,8 +369,6 @@ kafka-server-start /etc/kafka/server.properties
         </td>
     </tr>
     <tr class="ro1">
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
         <td style="text-align:left;width:5.445cm; " class="ce4">&nbsp;</td>
         <td style="text-align:left;width:5.364cm; " class="ce4">&nbsp;</td>
         <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
@@ -401,8 +376,6 @@ kafka-server-start /etc/kafka/server.properties
         <td style="text-align:left;width:5.173cm; " class="ce4">&nbsp;</td>
     </tr>
     <tr class="ro1">
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
         <td style="text-align:left;width:5.445cm; " class="ce4">&nbsp;</td>
         <td style="text-align:left;width:5.364cm; " class="ce4">&nbsp;</td>
         <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
@@ -410,8 +383,6 @@ kafka-server-start /etc/kafka/server.properties
         <td style="text-align:left;width:5.173cm; " class="ce4">&nbsp;</td>
     </tr>
     <tr class="ro1">
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
         <td colspan="2" style="text-align:left;width:5.445cm; " class="ce2">
             <p>MaxRatePerPartition = 100 &amp; maxOffsetPerTrigger = 100</p>
         </td>
@@ -421,8 +392,6 @@ kafka-server-start /etc/kafka/server.properties
         </td>
     </tr>
     <tr class="ro1">
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
         <td style="text-align:left;width:5.445cm; " class="ce3">
             <p>Task Time</p>
         </td>
@@ -438,8 +407,6 @@ kafka-server-start /etc/kafka/server.properties
         </td>
     </tr>
     <tr class="ro1">
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
         <td style="text-align:left;width:5.445cm; " class="ce3">
             <p>shufle read</p>
         </td>
@@ -455,8 +422,6 @@ kafka-server-start /etc/kafka/server.properties
         </td>
     </tr>
     <tr class="ro1">
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
         <td style="text-align:left;width:5.445cm; " class="ce3">
             <p>shuffled write</p>
         </td>
@@ -472,8 +437,6 @@ kafka-server-start /etc/kafka/server.properties
         </td>
     </tr>
     <tr class="ro1">
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
         <td style="text-align:left;width:5.445cm; " class="ce3">
             <p>Complete Tasks</p>
         </td>
@@ -489,8 +452,6 @@ kafka-server-start /etc/kafka/server.properties
         </td>
     </tr>
     <tr class="ro1">
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
         <td style="text-align:left;width:5.445cm; " class="ce3">
             <p>Storage/Memory</p>
         </td>
@@ -506,8 +467,6 @@ kafka-server-start /etc/kafka/server.properties
         </td>
     </tr>
     <tr class="ro1">
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
         <td style="text-align:left;width:5.445cm; " class="ce4">&nbsp;</td>
         <td style="text-align:left;width:5.364cm; " class="ce4">&nbsp;</td>
         <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
@@ -515,8 +474,6 @@ kafka-server-start /etc/kafka/server.properties
         <td style="text-align:left;width:5.173cm; " class="ce4">&nbsp;</td>
     </tr>
     <tr class="ro1">
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
         <td style="text-align:left;width:5.445cm; " class="ce4">&nbsp;</td>
         <td style="text-align:left;width:5.364cm; " class="ce4">&nbsp;</td>
         <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
@@ -524,8 +481,6 @@ kafka-server-start /etc/kafka/server.properties
         <td style="text-align:left;width:5.173cm; " class="ce4">&nbsp;</td>
     </tr>
     <tr class="ro1">
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
         <td colspan="2" style="text-align:left;width:5.445cm; " class="ce2">
             <p>MaxRatePerPartition = 100 &amp; maxOffsetPerTrigger = 200</p>
         </td>
@@ -535,8 +490,6 @@ kafka-server-start /etc/kafka/server.properties
         </td>
     </tr>
     <tr class="ro1">
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
         <td style="text-align:left;width:5.445cm; " class="ce3">
             <p>Task Time</p>
         </td>
@@ -552,8 +505,6 @@ kafka-server-start /etc/kafka/server.properties
         </td>
     </tr>
     <tr class="ro1">
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
         <td style="text-align:left;width:5.445cm; " class="ce3">
             <p>shufle read</p>
         </td>
@@ -569,8 +520,6 @@ kafka-server-start /etc/kafka/server.properties
         </td>
     </tr>
     <tr class="ro1">
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
         <td style="text-align:left;width:5.445cm; " class="ce3">
             <p>shuffled write</p>
         </td>
@@ -586,8 +535,6 @@ kafka-server-start /etc/kafka/server.properties
         </td>
     </tr>
     <tr class="ro1">
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
         <td style="text-align:left;width:5.445cm; " class="ce3">
             <p>Complete Tasks</p>
         </td>
@@ -603,8 +550,6 @@ kafka-server-start /etc/kafka/server.properties
         </td>
     </tr>
     <tr class="ro1">
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
         <td style="text-align:left;width:5.445cm; " class="ce3">
             <p>Storage/Memory</p>
         </td>
@@ -620,8 +565,6 @@ kafka-server-start /etc/kafka/server.properties
         </td>
     </tr>
     <tr class="ro1">
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
         <td style="text-align:left;width:5.445cm; " class="ce4">&nbsp;</td>
         <td style="text-align:left;width:5.364cm; " class="ce4">&nbsp;</td>
         <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
@@ -629,8 +572,6 @@ kafka-server-start /etc/kafka/server.properties
         <td style="text-align:left;width:5.173cm; " class="ce4">&nbsp;</td>
     </tr>
     <tr class="ro1">
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
         <td style="text-align:left;width:5.445cm; " class="ce4">&nbsp;</td>
         <td style="text-align:left;width:5.364cm; " class="ce4">&nbsp;</td>
         <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
@@ -638,8 +579,6 @@ kafka-server-start /etc/kafka/server.properties
         <td style="text-align:left;width:5.173cm; " class="ce4">&nbsp;</td>
     </tr>
     <tr class="ro1">
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
         <td colspan="2" style="text-align:left;width:5.445cm; " class="ce2">
             <p>MaxRatePerPartition = 200 &amp; maxOffsetPerTrigger = 100</p>
         </td>
@@ -649,8 +588,6 @@ kafka-server-start /etc/kafka/server.properties
         </td>
     </tr>
     <tr class="ro1">
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
         <td style="text-align:left;width:5.445cm; " class="ce3">
             <p>Task Time</p>
         </td>
@@ -666,8 +603,6 @@ kafka-server-start /etc/kafka/server.properties
         </td>
     </tr>
     <tr class="ro1">
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
         <td style="text-align:left;width:5.445cm; " class="ce3">
             <p>shufle read</p>
         </td>
@@ -683,8 +618,6 @@ kafka-server-start /etc/kafka/server.properties
         </td>
     </tr>
     <tr class="ro1">
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
         <td style="text-align:left;width:5.445cm; " class="ce3">
             <p>shuffled write</p>
         </td>
@@ -700,8 +633,6 @@ kafka-server-start /etc/kafka/server.properties
         </td>
     </tr>
     <tr class="ro1">
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
         <td style="text-align:left;width:5.445cm; " class="ce3">
             <p>Complete Tasks</p>
         </td>
@@ -717,8 +648,6 @@ kafka-server-start /etc/kafka/server.properties
         </td>
     </tr>
     <tr class="ro1">
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
         <td style="text-align:left;width:5.445cm; " class="ce3">
             <p>Storage/Memory</p>
         </td>
@@ -734,8 +663,6 @@ kafka-server-start /etc/kafka/server.properties
         </td>
     </tr>
     <tr class="ro1">
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
         <td style="text-align:left;width:5.445cm; " class="ce4">&nbsp;</td>
         <td style="text-align:left;width:5.364cm; " class="ce4">&nbsp;</td>
         <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
@@ -743,8 +670,6 @@ kafka-server-start /etc/kafka/server.properties
         <td style="text-align:left;width:5.173cm; " class="ce4">&nbsp;</td>
     </tr>
     <tr class="ro1">
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
         <td style="text-align:left;width:5.445cm; " class="ce4">&nbsp;</td>
         <td style="text-align:left;width:5.364cm; " class="ce4">&nbsp;</td>
         <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
@@ -752,8 +677,6 @@ kafka-server-start /etc/kafka/server.properties
         <td style="text-align:left;width:5.173cm; " class="ce4">&nbsp;</td>
     </tr>
     <tr class="ro1">
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
         <td colspan="2" style="text-align:left;width:5.445cm; " class="ce2">
             <p>MaxRatePerPartition = 200 &amp; maxOffsetPerTrigger = 200</p>
         </td>
@@ -763,8 +686,6 @@ kafka-server-start /etc/kafka/server.properties
         </td>
     </tr>
     <tr class="ro1">
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
         <td style="text-align:left;width:5.445cm; " class="ce3">
             <p>Task Time</p>
         </td>
@@ -780,8 +701,6 @@ kafka-server-start /etc/kafka/server.properties
         </td>
     </tr>
     <tr class="ro1">
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
         <td style="text-align:left;width:5.445cm; " class="ce3">
             <p>shufle read</p>
         </td>
@@ -797,8 +716,6 @@ kafka-server-start /etc/kafka/server.properties
         </td>
     </tr>
     <tr class="ro1">
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
         <td style="text-align:left;width:5.445cm; " class="ce3">
             <p>shuffled write</p>
         </td>
@@ -814,8 +731,6 @@ kafka-server-start /etc/kafka/server.properties
         </td>
     </tr>
     <tr class="ro1">
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
         <td style="text-align:left;width:5.445cm; " class="ce3">
             <p>Complete Tasks</p>
         </td>
@@ -831,8 +746,6 @@ kafka-server-start /etc/kafka/server.properties
         </td>
     </tr>
     <tr class="ro1">
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
         <td style="text-align:left;width:5.445cm; " class="ce3">
             <p>Storage/Memory</p>
         </td>
@@ -848,8 +761,6 @@ kafka-server-start /etc/kafka/server.properties
         </td>
     </tr>
     <tr class="ro1">
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
         <td style="text-align:left;width:5.445cm; " class="ce4">&nbsp;</td>
         <td style="text-align:left;width:5.364cm; " class="ce4">&nbsp;</td>
         <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
@@ -857,8 +768,6 @@ kafka-server-start /etc/kafka/server.properties
         <td style="text-align:left;width:5.173cm; " class="ce4">&nbsp;</td>
     </tr>
     <tr class="ro1">
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
         <td style="text-align:left;width:5.445cm; " class="ce4">&nbsp;</td>
         <td style="text-align:left;width:5.364cm; " class="ce4">&nbsp;</td>
         <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
@@ -866,8 +775,6 @@ kafka-server-start /etc/kafka/server.properties
         <td style="text-align:left;width:5.173cm; " class="ce4">&nbsp;</td>
     </tr>
     <tr class="ro1">
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
         <td colspan="2" style="text-align:left;width:5.445cm; " class="ce2">
             <p>MaxRatePerPartition = 400 &amp; maxOffsetPerTrigger = 400</p>
         </td>
@@ -877,8 +784,6 @@ kafka-server-start /etc/kafka/server.properties
         </td>
     </tr>
     <tr class="ro1">
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
         <td style="text-align:left;width:5.445cm; " class="ce3">
             <p>Task Time</p>
         </td>
@@ -894,8 +799,6 @@ kafka-server-start /etc/kafka/server.properties
         </td>
     </tr>
     <tr class="ro1">
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
         <td style="text-align:left;width:5.445cm; " class="ce3">
             <p>shufle read</p>
         </td>
@@ -911,8 +814,6 @@ kafka-server-start /etc/kafka/server.properties
         </td>
     </tr>
     <tr class="ro1">
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
         <td style="text-align:left;width:5.445cm; " class="ce3">
             <p>shuffled write</p>
         </td>
@@ -928,8 +829,6 @@ kafka-server-start /etc/kafka/server.properties
         </td>
     </tr>
     <tr class="ro1">
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
         <td style="text-align:left;width:5.445cm; " class="ce3">
             <p>Complete Tasks</p>
         </td>
@@ -945,8 +844,6 @@ kafka-server-start /etc/kafka/server.properties
         </td>
     </tr>
     <tr class="ro1">
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
-        <td style="text-align:left;width:2.258cm; " class="Default">&nbsp;</td>
         <td style="text-align:left;width:5.445cm; " class="ce3">
             <p>Storage/Memory</p>
         </td>
